@@ -1,5 +1,6 @@
-{
+{ 
   "name": "react-components",
+  "homepage":"http://jiahueic.github.io/TREE",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages-deploy -- 'A custom commit message'",
+    "deploy": "gh-pages-deploy",
     "clean-source": "rimraf README.md src webroot package.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
