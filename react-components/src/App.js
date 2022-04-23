@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useMoralis } from "react-moralis";
-
+import ReactDOM from "react-dom";
+import { MoralisProvider } from "react-moralis";
 import Navbar from "./component/Navbar";
 import Pages from "./component/Pages";
 import pageContent from "./PageContent";
@@ -16,6 +17,16 @@ const CryptoAuthContext = React.createContext();
 const EmailAuthContext = React.createContext();
 
 export { CryptoAuthContext, EmailAuthContext };
+
+ReactDOM.render(
+  <MoralisProvider
+    appId="qvHyYDc8l9yqfc778bD7a6EU5QID3kDAbisuJjOE"
+    serverUrl="https://f7jlgbrdz8zv.usemoralis.com:2053/server"
+  >
+    <App />
+  </MoralisProvider>,
+  document.getElementById("root")
+);
 
 function App(props) {
   const { login, isAuthenticated, authenticate, Moralis, user } = useMoralis();
