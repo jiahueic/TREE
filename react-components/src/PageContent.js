@@ -51,11 +51,7 @@ const pageContent = {
                     className="newscard-items"
                   ></Newscard>
                 </ul>
-                <div className="test-buttons">
-                  <CryptoLogIn></CryptoLogIn>
-                  <SignUp></SignUp>
-                  <SignIn></SignIn>
-                </div>
+                <div className="test-buttons"></div>
               </div>
             </section>
           </span>

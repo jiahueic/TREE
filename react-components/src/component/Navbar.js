@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CryptoLogIn from "./Auth";
+import { SignUp, SignIn, CryptoLogIn } from "./Auth";
 import "./Navbar.css";
 
 function NavMenuItem(props) {
@@ -26,6 +26,9 @@ function Navbar(props) {
       </Link>
 
       <ul className="all-menu-items">
+        <SignUp></SignUp>
+        <SignIn></SignIn>
+        <CryptoLogIn></CryptoLogIn>
         <NavMenuItem text="Governance" link="/governance"></NavMenuItem>
         <NavMenuItem text="Transaction" link="/transaction"></NavMenuItem>
         <NavMenuItem text="About Us" link="/about"></NavMenuItem>
