@@ -5,7 +5,7 @@ import CardsItem from "./component/CardsItem";
 import Organisations from "./component/Organisations";
 import ProfileInfo from "./component/ProfileInfo";
 import Newscard from "./component/Newscard";
-import CryptoLogIn from "./component/Auth";
+import { CryptoLogIn } from "./component/Auth";
 import { EmailLogIn } from "./component/Auth";
 import SignUp, { SignIn } from "./component/Signup";
 import Button from "./component/Button";
